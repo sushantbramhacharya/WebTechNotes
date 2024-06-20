@@ -1,0 +1,30 @@
+<!-- border property only perform outer layer -->
+<table border="2">
+    <!-- tr are rows/table row -->
+    <tr align="left">
+       <!-- th/table heading or columns -->
+        <!-- Centered -->
+        <th width="123" height="123">Language</td>
+        <!-- Uses need to use 2 columns so we will use colspan -->
+        <th align="center" colspan="2">Uses</td>
+        <th>Popularity</td>
+    </tr>
+    <tr>
+         <!-- td are columns/table data -->
+          <td rowspan="2">Java</td>
+          <td>Android Programming</td>
+          <td>Network Programming</td>
+          <td rowspan="2">Very Popular</td>
+    </tr>
+    <tr>
+        <td>Backend Programming</td>
+        <td>DSA in Java</td>
+    </tr>
+</table>
+<style>
+    table{
+        /* Used to create only one line border */
+        border-collapse: collapse;
+        border-color: red;
+    }
+</style>
