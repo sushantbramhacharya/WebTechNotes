@@ -1,0 +1,32 @@
+/* External CSS */
+/* Class Selector*/
+body{
+    /* Last Priority */
+    background-color: black;
+}
+.hello{
+    /* Attribute:values; */
+    /* Font attributes */
+    font-size: 30px;
+    color: red;
+    font-weight: bold;
+    /* text-decoration: line-through; */
+    /* text-decoration: overline; */
+    text-decoration: underline dotted;
+    font-style: italic;
+    font-family: Arial Narrow;
+    /* bold lighter normal */
+
+    display: inline;
+}
+/* Id Selector */
+#asus{
+    display: block;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Times New Roman', Times, serif;
+}
+img{
+    width: 100%;
+    height: auto;
+}
