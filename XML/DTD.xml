@@ -1,0 +1,30 @@
+<bookstore>
+    <book category="romance">
+        <title>Titanic</title>
+        <author>Tyla Babu</author>
+        <author>Tita Babu</author>
+        <price>19.99</price>
+    </book>
+    <book category="triller">
+        <title>Harry Potter</title>
+        <author>Harry Babu</author>
+        <price>49.99</price>
+    </book>
+</bookstore>
+
+Occurance
+Only 1 - no symbol need
+Min 1 or more - +
+Min 0 or more - *
+0 or 1 - ?
+
+DTD
+<!DOCTYPE book[
+    <!ELEMENT bookstore (book+)>
+    <!ELEMENT book(title,author+,price?)>
+    <!ELEMENT title (#PCDATA)>
+    <!ELEMENT author (#PCDATA)>
+    <!ELEMENT price (#PCDATA)>
+    <!ATTLIST book category CDATA "None">
+
+]>

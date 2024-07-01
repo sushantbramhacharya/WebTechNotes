@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<humans>
+    <person>
+        <name gender="male">Ram</name>
+        <age>45</age>
+        <address>Lalitpur</address>
+    </person>
+    <person>
+        <name>Laxman</name>
+        <age>40</age>
+        <address>Kathmandu</address>
+    </person>
+
+<!-- Rules of writing Good XML -->
+
+<!-- All XML must have a root element.
+All tags must be closed.
+All tags must be properly nested.
+Tag names have strict limits.
+Tag names are case sensitive.
+Tag names cannot contain spaces.
+Attribute values must appear within quotes ("").
+White space is preserved. -->
+
+<!-- Use -->
+<!-- XPath and XQuery -->
+<!-- Xpath accessing age of Ram -->
+<!-- /humans[1]/age -->
+<!-- Check Xpath https://www.freeformatter.com/xpath-tester.html#before-output -->
+<!-- Xquery
+    for $x in doc("books.xml")/bookstore/book
+        where $x/price>30
+            return $x/title 
+-->
+
+
+<!-- Validate -->
+<!-- DTD(Data Type Defination) -->
+<!-- XSD(XML Schema Defination) -->
+
+<!-- Style -->
+<!-- XSLT(XML Style Language Transformation) -->
+
+<!-- 1 inconsistancy -->
+    <person>
+        <naam>Sita</naam>
+        <age>40</age>
+        <address>Kathmandu</address>
+    </person>
+<!-- 2 inconsistancy -->
+    <person>
+        <age>40</age>
+        <address>Kathmandu</address>
+    </person>
+<!-- 3 inconsistancy -->
+    <person>
+        <name>Laxman</name>
+        <age>40</age>
+        <age>45</age>
+        <address>Kathmandu</address>
+    </person>
+
+</humans>
